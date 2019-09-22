@@ -1,0 +1,9 @@
+li{
+    list-style: none;
+}
+.box {
+    /* 默认情况下，webpack 无法处理 css 文件中的 url地址，不管是图片还是 字体库，只要是 Url 地址  都处理不了 */
+    background: url('../images/1.jpg');
+    width: 10vw;
+    height: 10vh;
+}

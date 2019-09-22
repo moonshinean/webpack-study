@@ -12,20 +12,24 @@
     <!-- <script src="./main.js"></script> -->
 
     <!-- 通过 webpack 这么一个前端构建工具， 把 mian.js 做了一下处理。生成了一个bundle.js文件-->
-     <script src="../dist/bundle.js"></script>
+     <!-- <script src="../dist/bundle.js"></script> -->
+
+     <!-- 当我使用 html-webpack-plugin 之后, 我们不在需要手动处理 bundle.js 的引用路径，因为这个插件，已经帮我们自动创建了一个 
+        合适的 script，并且 引用了正确的路径-->
+     <!-- <script src="/bundle.js"></script> -->
+
+     <!-- css 会发起二次请求，不推荐此处调用 -->
+     <!-- <link rel="stylesheet" href="css/index.css"> -->
 </head>
 <body>
     <ul>
         <li>这是一个li</li>
         <li>这是一个li</li>
-        <li>这是一个li</li>
-        <li>这是一个li</li>
-        <li>这是一个li</li>
-        <li>这是一个li</li>
-        <li>这是一个li</li>
-        <li>这是一个li</li>
-        <li>这是一个li</li>
-        <li>这是一个li</li>
     </ul>
+    <div class="box"></div>  
+    
+    <div>
+        <span class="glyphicon glyphinon-heart" aria-hidden="true"></span>
+    </div>
 </body>
 </html>
